@@ -1,51 +1,79 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<style>
-		.key {
-			width: 50px;
-			height: 50px;
-			background-color: lightblue;
-		}
 
-		#key2 {
-			animation-name: go;
-		}
+<head>
 
-		@@keyframes go {
-			33% {
-				background-color: #ADD8E6;
-			}
+    <title>[Title]</title>
 
-			66% {
-				background-color: #A3768F;
-			}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-			100% {
-				background-color: #991337;
-			}
-		}
-	</style>
-	<body>
-		<div class="key" id="one"></div>
-	</body>
-	<script>
-		var key = document.getElementById("one");
-		document.addEventListener('keydown', function(event) {
-			var audio = new Audio('boom.wav');
-			var audio2 = new Audio('clap.wav');
-			if(event.keyCode == 65) {
-				audio.play();
-				// key.style.background = "red";
-				key.addClass("key2")
-			}
-			else if(event.keyCode == 83) {
-				audio2.play();
-			}
-		});
 
-	</script>
+    <style type="text/css">
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        #pop {
+            background: red;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 500px;
+        }
+
+        #pop:active {
+            background: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Press a key on the keyboard in the input field to get the Unicode character code of the pressed key.</p>
+
+    <input type="text" size="40" onkeypress="myFunction(event)">
+
+    <p id="demo"></p>
+
+    <audio id="sound1" src="rain.mp3"></audio>
+    <audio id="sound2" src="fun.mp3"></audio>
+
+    <button onclick="document.getElementById('sound1').play()">box zero zero</button>
+    <button onclick="document.getElementById('sound2').play()">Other Saying</button>
+    <div id="pop">hey</div>
+
+</body>
+
+<script>
+    function myFunction(event) {
+        var x = event.which || event.keyCode;
+        document.getElementById("demo").innerHTML = "The Unicode value is: " + x;
+        //    document.getElementById("sound1").play();
+    }
+
+    document.addEventListener('keydown', function () {
+        if (event.keyCode == 97 || event.keyCode == 65) {
+            document.getElementById("sound2").play();
+            event.keyCode == 0;
+        }
+    
+    if(event.keyCode == 115 || event.keyCode == 83) {
+        document.getElementById("sound1").play();
+        event.keyCode == 0;
+    }
+    else if (event.keyCode == 39) {
+        alert('Right was pressed');
+    }
+});
+
+</script>
+
 </html>
