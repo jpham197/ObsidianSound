@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.key {
+			width: 50px;
+			height: 50px;
+			background-color: lightblue;
+		}
+
+		#key2 {
+			animation-name: go;
+		}
+
+		@@keyframes go {
+			33% {
+				background-color: #ADD8E6;
+			}
+
+			66% {
+				background-color: #A3768F;
+			}
+
+			100% {
+				background-color: #991337;
+			}
+		}
+	</style>
+	<body>
+		<div class="key" id="one"></div>
+	</body>
+	<script>
+		var key = document.getElementById("one");
+		document.addEventListener('keydown', function(event) {
+			var audio = new Audio('boom.wav');
+			var audio2 = new Audio('clap.wav');
+			if(event.keyCode == 65) {
+				audio.play();
+				// key.style.background = "red";
+				key.addClass("key2")
+			}
+			else if(event.keyCode == 83) {
+				audio2.play();
+			}
+		});
+
+	</script>
+</html>
