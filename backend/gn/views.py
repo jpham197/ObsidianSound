@@ -6,10 +6,10 @@ import json
 #id, username, password, favorite sounds, recently used sounds, email
 #
 
-mp3s = {"filepaths": {"1": "../../soundfiles/1.mp3",
-                      "2": "../../soundfiles/2.mp3",
-                      "3": "../../soundfiles/3.mp3",
-                      "4": "../../soundfiles/4.mp3"}}
+mp3s = {"filepath":[{"1": "../../soundfiles/1.mp3"},
+                    {"2": "../../soundfiles/2.mp3"},
+                    {"3": "../../soundfiles/3.mp3"},
+                    {"4": "../../soundfiles/4.mp3"}]}
 @app.route("/test")
 def mess():
     x = 0
