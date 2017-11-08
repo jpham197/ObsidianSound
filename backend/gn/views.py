@@ -6,16 +6,17 @@ import json
 #id, username, password, favorite sounds, recently used sounds, email
 #
 
-mp3s = {"filepath":[{"1": "../../soundfiles/1.mp3"},
+mp3s = {"filepaths":[{"1": "../../soundfiles/1.mp3"},
                     {"2": "../../soundfiles/2.mp3"},
                     {"3": "../../soundfiles/3.mp3"},
                     {"4": "../../soundfiles/4.mp3"}]}
+
 @app.route("/test")
-def mess():
-    x = 0
+def wha_t():
+    a = 0
     for num in mp3s['filepaths']:
-        x += 1
-        return str(x)
+        a += 1
+    return str(a)
 @app.route("/database")
 def make_db():
     con = sql.connect("main.db")
@@ -24,7 +25,10 @@ def make_db():
         cur.execute('CREATE TABLE IF NOT EXISTS database(id INTEGER PRIMARY KEY, filepath TEXT)')
         # cur.execute('DROP TABLE IF EXISTS database')
         return "Success"
-@app.route("/populate")
+@app.route("/add_info")
 def add_data():
     # return mp3s['filepaths']
+    return ""
+@app.route("/add_info_by_json")
+def add_data_by_json():
     return ""
