@@ -1,0 +1,20 @@
+body {
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		font-size: 12px;
+}
+p {
+		margin-bottom: 10px;
+}
+#pop {
+		background: red;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 500px;
+}
+#pop:active {
+		background: lightblue;
+}
