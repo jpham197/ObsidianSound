@@ -24,7 +24,7 @@ def make_db():
         cur = con.cursor()
         cur.execute('CREATE TABLE IF NOT EXISTS database(id INTEGER PRIMARY KEY, filepath TEXT)')
         # cur.execute('DROP TABLE IF EXISTS database')
-        return "Success"
+        return "Success!"
 @app.route("/addinfo")
 def add_data():
     return ""
