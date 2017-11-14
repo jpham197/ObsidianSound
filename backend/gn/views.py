@@ -27,7 +27,13 @@ def make_db():
         return "Success!"
 @app.route("/addinfo")
 def add_data():
-    return ""
+	a = request.args.get('a', 0, int)
+	b = request.args.get('b', null, str)
+	con = sql.connect("main.db")
+	with con:
+		cur = con.cursor()
+		cur.execute('INSERT INTO database(id, filepath) VALUES (?, ?)', (a, b))
+    return "[" + str(a) + ", " + b +  "]"
 @app.route("/addbyjson")
 def add_data_by_json():
     con = sql.connect("main.db")
