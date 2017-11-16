@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>[Title]</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <style type="text/css">
+        body {
+            background-color: #003366;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        p {
+            margin: 6px;
+            padding: 9px;
+            color: purple;
+            font-size: 20px;
+        }
+
+        #oneButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 20px;
+            top: 20px;
+        }
+
+        #twoButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 140px;
+            top: 20px;
+        }
+
+        #threeButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 260px;
+            top: 20px;
+        }
+
+        #fourButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 380px;
+            top: 20px;
+        }
+
+        #fiveButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 500px;
+            top: 20px;
+        }
+
+        #sixButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 620px;
+            top: 20px;
+        }
+
+
+        #aButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 20px;
+            top: 150px;
+        }
+
+        #sButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 140px;
+            top: 150px;
+        }
+
+        #dButton {
+            background: radial-gradient(circle, white, gray);
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            border-radius: 100px;
+            border-style: outset;
+            border-color: red;
+            border-width: 7px;
+            left: 260px;
+            top: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <audio id="sound1" src="rain.mp3"></audio>
+    <audio id="sound2" src="fun.mp3"></audio>
+
+    <div id="oneButton">
+        <p>1</p>
+    </div>
+
+    <div id="twoButton">
+        <p>2</p>
+    </div>
+
+    <div id="threeButton">
+        <p>3</p>
+    </div>
+
+    <div id="fourButton">
+        <p>4</p>
+        </class>
+    </div>
+
+    <div id="fiveButton">
+        <p>5</p>
+        </class>
+    </div>
+
+    <div id="sixButton">
+        <p>6</p>
+    </div>
+
+    <div id="aButton">
+        <p>A</p>
+    </div>
+
+    <div id="sButton">
+        <p>S</p>
+    </div>
+
+    <div id="dButton">
+        <p>D</p>
+    </div>
+
+    <div id="demo"></div>
+    <class id="button">
+
+        <!--<div id="slidecontainer"> slider
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>-->
+
+</body>
+
+<script>
+    document.addEventListener('keydown', function () {
+        if (event.keyCode == 97 || event.keyCode == 65) { // this is a
+            document.getElementById("sound2").play();
+            document.getElementById('aButton').style.background = 'white';
+            document.getElementById('aButton').style.borderColor = 'skyblue';
+            document.getElementById('aButton').style.color = 'red';
+        }
+        if (event.keyCode == 115 || event.keyCode == 83) { // this is s
+            document.getElementById("sound1").play();
+            document.getElementById('sButton').style.background = 'white';
+            document.getElementById('sButton').style.borderColor = 'skyblue';
+            document.getElementById('sButton').style.color = 'red';
+        }
+        if (event.keyCode == 100 || event.keyCode == 68) { // this is d
+            document.getElementById("sound2").play();
+            document.getElementById('dButton').style.background = 'white';
+            document.getElementById('dButton').style.borderColor = 'skyblue';
+            document.getElementById('dButton').style.color = 'red';
+        }
+    });
+
+    document.addEventListener('keyup', function () {
+        if (event.keyCode == 97 || event.keyCode == 65) { // this is a
+            document.getElementById("sound2").load();
+            document.getElementById("sound2").play();
+            document.getElementById('aButton').style.background = 'radial-gradient(circle,white, gray)';
+            document.getElementById('aButton').style.borderColor = 'red';
+            document.getElementById('aButton').style.color = 'blue';
+        }
+        if (event.keyCode == 115 || event.keyCode == 83) { // this is s
+            document.getElementById("sound1").load();
+            document.getElementById("sound1").play();
+            document.getElementById('sButton').style.background = 'radial-gradient(circle,white, gray)';
+            document.getElementById('sButton').style.borderColor = 'red';
+            document.getElementById('sButton').style.color = 'blue';
+        }
+        if (event.keyCode == 100 || event.keyCode == 68) { // this is d
+            document.getElementById("sound2").load();
+            document.getElementById("sound2").play();
+            document.getElementById('dButton').style.background = 'radial-gradient(circle,white, gray)';
+            document.getElementById('dButton').style.borderColor = 'red';
+            document.getElementById('dButton').style.color = 'blue';
+        }
+    });
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+        output.innerHTML = this.value;
+    }
+
+</script>
+
+</html>
