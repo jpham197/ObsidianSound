@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>[Title]</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <style type="text/css">
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        p{
+            margin: 5px;
+            float: left;
+        }
+
+        #aButton {
+            background: salmon;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 10px;
+            top: 100px;
+        }
+
+        #sButton {
+            background: salmon;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 120px;
+            top: 100px;
+        }
+        #dButton {
+            background: salmon;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 230px;
+            top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Press a key on the keyboard in the input field to get the Unicode character code of the pressed key.</p>
+
+    <input type="text" size="40" onkeypress="myFunction(event)">
+
+    <audio id="sound1" src="rain.mp3"></audio>
+    <audio id="sound2" src="fun.mp3"></audio>
+
+    <div id="demo"></div>
+
+    <button onclick="document.getElementById('sound1').play()">box zero zero</button>
+    <button onclick="document.getElementById('sound2').play()">Other Saying</button>
+
+    <div id="aButton"><p>A button</p></div>
+    <div id="sButton"><p>S button</p></div>
+    <div id="dButton"><p>D button but has same sound file as A button because i have no other audio files</p></div>
+
+</body>
+
+<script>
+    function myFunction(event) {
+        var x = event.which || event.keyCode;
+        document.getElementById("demo").innerHTML = "The Unicode value is: " + x;
+        //    document.getElementById("sound1").play();
+    }
+
+    document.addEventListener('keydown', function () {
+        if (event.keyCode == 97 || event.keyCode == 65) { // this is a
+            document.getElementById("sound2").play();
+            document.getElementById('aButton').style.background = 'lawngreen';
+        }
+        if (event.keyCode == 115 || event.keyCode == 83) { // this is s
+            document.getElementById("sound1").play();
+            document.getElementById('sButton').style.background = 'lawngreen';
+        }
+        if (event.keyCode == 100 || event.keyCode == 68) { // this is d
+            document.getElementById("sound2").play();
+            document.getElementById('dButton').style.background = 'lawngreen';
+        }
+    });
+
+    document.addEventListener('keyup', function () {
+        if (event.keyCode == 97 || event.keyCode == 65) { // this is a
+            document.getElementById("sound2").load();
+            document.getElementById("sound2").play();
+            document.getElementById('aButton').style.background = 'salmon';
+        }
+        if (event.keyCode == 115 || event.keyCode == 83) { // this is s
+            document.getElementById("sound1").load();
+            document.getElementById("sound1").play();
+            document.getElementById('sButton').style.background = 'salmon';
+        }
+        if (event.keyCode == 100 || event.keyCode == 68) { // this is d
+            document.getElementById("sound2").load();
+            document.getElementById("sound2").play();
+            document.getElementById('dButton').style.background = 'salmon';
+        }
+    });
+
+</script>
+
+</html>
