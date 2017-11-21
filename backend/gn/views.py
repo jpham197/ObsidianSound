@@ -46,7 +46,7 @@ def drop_db():
         cur = con.cursor()
         cur.execute('DROP TABLE IF EXISTS sounds')
         return "Database successfully dropped"
-@app.route("/addinfo")
+@app.route("/sounds-addinfo")
 def add_data():
     a = request.args.get('a', 0, int)
     b = request.args.get('b', "", str)
