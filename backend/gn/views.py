@@ -19,17 +19,19 @@ mp3s = {"mp3s":[{"filepath": "../../soundfiles/1.mp3"},
                 {"filepath": "../../soundfiles/11.mp3"},
                 {"filepath": "../../soundfiles/12.mp3"}]}
 
-accounts = {"Accounts:":[{"admin": "password"},
+accounts = {"Accounts":[{"admin": "password"},
                          {"user1": "password"},
                          {"user2": "password"},
                          {"user3": "password"}]}
 
-@app.route("/test") #returns number of filepaths entered in json object
+accounts2 = {"Accounts":[{"username": "admin", "password": "pass123"},
+                         {"username": "user1", "password": "pass123"},
+                         {"username": "user2", "password": "pass123"},
+                         {"username": "user3", "password": "pass123"}]}
+
+@app.route("/test") #accessing json object test
 def wha_t():
-    a = 0
-    for num in mp3s['mp3s']:
-        a += 1
-    return "Number of filepaths in json object" + str(a)
+    return str(accounts['Accounts'][0]['admin'])
 @app.route("/databasesounds")
 def make_db_sounds():
     con = sql.connect("main.db")
@@ -42,7 +44,7 @@ def drop_db():
     con = sql.connect("main.db")
     with con:
         cur = con.cursor()
-        cur.execute('DROP TABLE IF EXISTS database')
+        cur.execute('DROP TABLE IF EXISTS sounds')
         return "Database successfully dropped"
 @app.route("/addinfo")
 def add_data():
@@ -51,20 +53,21 @@ def add_data():
     con = sql.connect("main.db")
     with con:
         cur = con.cursor()
-        cur.execute('INSERT INTO database(id, filepath) VALUES (?, ?)', (a, b))
+        cur.execute('INSERT INTO sounds(id, filepath) VALUES (?, ?)', (a, b))
     return "[" + str(a) + ", " + b +  "]"
-@app.route("/addbyjson")
-def add_data_by_json():
+@app.route("/sounds-addbyjson")
+def addbyjson_sounds():
     con = sql.connect("main.db")
     with con:
         cur = con.cursor()
         jsonSize = 0
-        for num in mp3s['mp3s']:
-            jsonSize += 1
-            cur.execute('SELECT max(id) from database')
-            entries = cur.fetchall()
-            cur.execute('INSERT INTO database (filepath) VALUES (?)', [num['filepath']])
-    return "entries: " + str(jsonSize)
+        cur.execute('SELECT max(id) from sounds')
+        entries = cur.fetchall()
+        if entries[0][0] < 12:
+            for num in mp3s['mp3s']:
+                jsonSize += 1
+                cur.execute('INSERT INTO sounds (filepath) VALUES (?)', [num['filepath']])
+    return str(entries[0][0])
 @app.route("/load")
 def load_db():
     con = sql.connect("main.db")
@@ -72,7 +75,7 @@ def load_db():
     with con:
         cur = con.cursor()
         cur.execute("""
-            SELECT * FROM database
+            SELECT * FROM sounds
             ORDER BY id""")
         rows = cur.fetchall()
         results = []
@@ -84,5 +87,18 @@ def make_db_users():
     con = sql.connect("main.db")
     with con:
         cur = con.cursor()
-        cur.execute('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY, filepath TEXT)')
+        cur.execute('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)')
         return "Success!"
+# @app.route("/accs-addbyjson")
+# def addbyjson_accs():
+#     con = sql.connect("main.db")
+#     with con:
+#         cur = con.cursor()
+#         jsonSize = 0
+#         cur.execute('SELECT max(id) from users')
+#         entries = cur.fetchall()
+#         if entries[0][0] < 12:
+#             for num in mp3s['mp3s']:
+#                 jsonSize += 1
+#                 cur.execute('INSERT INTO users (username, password) VALUES (?, ?)', ([num[]], num[num]))
+#     return str(entries[0][0])
