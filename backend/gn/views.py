@@ -1,5 +1,6 @@
 from flask import request
 from gn import app
+from flask_cors import CORS, cross_origin
 
 import sqlite3 as sql
 import json
