@@ -1,0 +1,384 @@
+body {
+		background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(pic1.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		font-size: 12px;
+}
+
+p {
+		margin: 6px;
+		padding: 9px;
+		color: purple;
+		font-size: 20px;
+}
+#logo{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+#oneButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 20px;
+		top: 20px;
+}
+
+#twoButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 140px;
+		top: 20px;
+}
+
+#threeButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 260px;
+		top: 20px;
+}
+
+#fourButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 380px;
+		top: 20px;
+}
+
+#fiveButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 500px;
+		top: 20px;
+}
+
+#sixButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 620px;
+		top: 20px;
+}
+/*Q W E R T Y BUTTONS HERE-*/
+#qButton{
+	background: radial-gradient(circle, white, gray);
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	border-radius: 100px;
+	border-style: outset;
+	border-color: red;
+	border-width: 7px;
+	left: 20px;
+	top: 150px;
+}
+#wButton{
+	background: radial-gradient(circle, white, gray);
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	border-radius: 100px;
+	border-style: outset;
+	border-color: red;
+	border-width: 7px;
+	left: 140px;
+	top: 150px;
+}
+#eButton{
+	background: radial-gradient(circle, white, gray);
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	border-radius: 100px;
+	border-style: outset;
+	border-color: red;
+	border-width: 7px;
+	left: 260px;
+	top: 150px;
+}
+#rButton{
+	background: radial-gradient(circle, white, gray);
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	border-radius: 100px;
+	border-style: outset;
+	border-color: red;
+	border-width: 7px;
+	left: 380px;
+	top: 150px;
+}
+#tButton{
+	background: radial-gradient(circle, white, gray);
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	border-radius: 100px;
+	border-style: outset;
+	border-color: red;
+	border-width: 7px;
+	left: 500px;
+	top: 150px;
+}
+#yButton{
+	background: radial-gradient(circle, white, gray);
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	border-radius: 100px;
+	border-style: outset;
+	border-color: red;
+	border-width: 7px;
+	left: 620px;
+	top: 150px;
+}
+
+/*A S D F G H BUTTONS HERE-*/
+
+#aButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 20px;
+		top: 280px;
+}
+
+#sButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 140px;
+		top: 280px;
+}
+
+#dButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 260px;
+		top: 280px;
+}
+#fButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 380px;
+		top: 280px;
+}
+#gButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 500px;
+		top: 280px;
+}
+#hButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 620px;
+		top: 280px;
+}
+
+/*Z X C V B N BUTTONS HERE-*/
+
+#zButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 20px;
+		top: 410px;
+}
+
+#xButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 140px;
+		top: 410px;
+}
+
+#cButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 260px;
+		top: 410px;
+}
+#vButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 380px;
+		top: 410px;
+}
+#bButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 500px;
+		top: 410px;
+}
+#nButton {
+		background: radial-gradient(circle, white, gray);
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		border-radius: 100px;
+		border-style: outset;
+		border-color: red;
+		border-width: 7px;
+		left: 620px;
+		top: 410px;
+}
+
+/*Character toggle*/
+.switch{
+	position: absolute;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+.switch input {display: none;}
+
+
+.slider{
+	position: absolute;
+	cursor: pointer;
+	top: 100px;
+	right: 500px;
+	width: 40px;
+	height: 300px;
+	background: #ccc;
+	writing-mode: bt-lr; /* Interner Exp vertical */
+	-webkit-appearance: slider-vertical; /*chrome vertical*/
+
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.slider:before{
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left:4px;
+	bottom: 4px;
+	background-color: #F0F8FF;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider{
+	background-color: #2196F3;
+}
+input:focus + .slider {
+	box-shadow: 10 10 10px #2196F3;
+}
+input:checked + .slider:before {
+background-color: skyblue;
+-webkit-transform: translateY(-26px);
+-ms-transform: translateY(-26px);
+transform: translateY(-26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
