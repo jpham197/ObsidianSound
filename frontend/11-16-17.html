@@ -2,15 +2,15 @@
 <html>
 	<head>
 	  <link rel="shortcut icon" href="OBS.ico"/>
-	    <title>Obsidian Sound</title>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+	  <title>Obsidian Sound</title>
 	</head>
 
-<body>
+	<body>
     <!--Character Toggle Switch -->
-    <label class = "switch">
-      <input type = "checkbox">
-      <span class = "slider round"></span>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
     </label>
 
     <!-- Sound files -->
@@ -31,7 +31,7 @@
     <audio id="sound15" src="../soundfiles/15.wav"></audio>
     <audio id="sound16" src="../soundfiles/16.wav"></audio>
     <audio id="sound17" src="../soundfiles/17.wav"></audio>
-    <audio id="doodlebob" src= "../soundfiles/Doodlebob sound effect.mp3"></audio>
+    <audio id="doodlebob" src="../soundfiles/Doodlebob sound effect.mp3"></audio>
 
     <div id="oneButton">
         <p>1</p>
@@ -145,6 +145,7 @@
     <div id="slidecontainer"> <!--slider-->
         <input type="range" orient="vertical" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
-		<script type="text/javascript" src="scripts/main.js"></scripts>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
 	</body>
 </html>
