@@ -7,18 +7,18 @@ import json
 
 #id, username, password, favorite sounds, recently used sounds, email
 
-mp3s = {"mp3s":[{"filepath": "../../soundfiles/1.mp3"},
-                {"filepath": "../../soundfiles/2.mp3"},
-                {"filepath": "../../soundfiles/3.mp3"},
-                {"filepath": "../../soundfiles/4.mp3"},
-                {"filepath": "../../soundfiles/5.m4a"},
-                {"filepath": "../../soundfiles/6.m4a"},
-                {"filepath": "../../soundfiles/7.m4a"},
-                {"filepath": "../../soundfiles/8.m4a"},
-                {"filepath": "../../soundfiles/9.mp3"},
-                {"filepath": "../../soundfiles/10.mp3"},
-                {"filepath": "../../soundfiles/11.mp3"},
-                {"filepath": "../../soundfiles/12.mp3"}]}
+mp3s = {"mp3s":[{"filepath": "../soundfiles/1.mp3"},
+                {"filepath": "../soundfiles/2.mp3"},
+                {"filepath": "../soundfiles/3.mp3"},
+                {"filepath": "../soundfiles/4.mp3"},
+                {"filepath": "../soundfiles/5.m4a"},
+                {"filepath": "../soundfiles/6.m4a"},
+                {"filepath": "../soundfiles/7.m4a"},
+                {"filepath": "../soundfiles/8.m4a"},
+                {"filepath": "../soundfiles/9.mp3"},
+                {"filepath": "../soundfiles/10.mp3"},
+                {"filepath": "../soundfiles/11.mp3"},
+                {"filepath": "../soundfiles/12.mp3"}]}
 
 accounts = {"Accounts":[{"admin": "password"},
                          {"user1": "password"},
@@ -76,7 +76,7 @@ def load_db():
     with con:
         cur = con.cursor()
         cur.execute("""
-            SELECT * FROM sounds
+            SELECT filepath FROM sounds
             ORDER BY id""")
         rows = cur.fetchall()
         results = []
