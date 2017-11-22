@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <head>
+  <link rel="shortcut icon" href="OBS.ico"/>
+    <title>Obsidian Sound</title>
 
-    <title>[Title]</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -24,6 +25,11 @@
             padding: 9px;
             color: purple;
             font-size: 20px;
+        }
+        #logo{
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
         }
 
         #oneButton {
@@ -339,12 +345,18 @@
           height: 34px;
         }
         .switch input {display: none;}
+
+
         .slider{
           position: absolute;
           cursor: pointer;
-          top: 565px;
-          left: 20px;
+          top: 100px;
+          right: 500px;
+          width: 40px;
+          height: 300px;
           background: #ccc;
+          writing-mode: bt-lr; /* Interner Exp vertical */
+          -webkit-appearance: slider-vertical; /*chrome vertical*/
 
           -webkit-transition: .4s;
           transition: .4s;
@@ -365,13 +377,13 @@
           background-color: #2196F3;
         }
         input:focus + .slider {
-          box-shadow: 0 0 1px #2196F3;
+          box-shadow: 10 10 10px #2196F3;
         }
         input:checked + .slider:before {
         background-color: skyblue;
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+        -webkit-transform: translateY(-26px);
+        -ms-transform: translateY(-26px);
+        transform: translateY(-26px);
         }
 
         .slider.round {
@@ -517,14 +529,16 @@
         <p>N</p>
     </div>
 
-
+  <div id="logo"> <!--added logo-->
+    <img src="OBS.png" atl="OBSIDIAN SOUND" style="width:70px; height:50;">
+  </div>
 
     <div id="demo"></div>
     <class id="button">
 
-        <!--<div id="slidecontainer"> slider
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    </div>-->
+    <div id="slidecontainer"> <!--slider-->
+        <input type="range" orient="vertical" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
 
 </body>
 
@@ -869,6 +883,7 @@
     slider.oninput = function () {
         output.innerHTML = this.value;
     }
+
 
 </script>
 
