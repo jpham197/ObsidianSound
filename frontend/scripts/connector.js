@@ -5,8 +5,9 @@ function getData() {
 	fetch(url)
 	.then((resp) => resp.json()) // Transform the data into json
 	.then(function(data) {
-		for (a = 1; a < 11; a++) {
-			document.getElementById('t' + a).innerHTML = data[a-1];
+
+		for (a = 1; a <= 17; a++) {
+			document.getElementById('sound'+a).setAttribute("src", data[a]);
 		}
 	})
 	.catch(function(error){
