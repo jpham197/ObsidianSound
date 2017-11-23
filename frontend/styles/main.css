@@ -9,12 +9,42 @@ body {
 		font-size: 12px;
 }
 
+
 p {
 		margin: 6px;
 		padding: 9px;
 		color: #380081;
 		font-size: 20px;
 }
+/*Screen begin*/
+.screen{
+	position:fixed;
+	top:18%;
+	left:68%;
+	width:600px;
+	height:250px;
+	background: #c0d6e4;
+	transform: translate(-50%,-50%);
+}
+.Log{/*this is the logo in the center of the screen*/
+	width:100px;
+	position:relative;
+	top:70px;
+	transform:scale(2);
+	left:0;
+	display: block;
+	margin: 0 auto;
+	transition: 2s;
+}
+
+.Log:hover{
+	transform:scale(3);
+}
+/*Keyframes for screen*/
+
+
+/*screen end*/
+
 #logo{
 	position: absolute;
 	right: 10px;
