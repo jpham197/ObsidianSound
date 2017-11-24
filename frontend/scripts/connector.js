@@ -1,5 +1,4 @@
 const url = "http://127.0.0.1:5000/load";
-let p = document.getElementById('1');
 
 function getData() {
 	fetch(url)
