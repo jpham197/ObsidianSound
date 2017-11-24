@@ -328,8 +328,8 @@ document.addEventListener('keyup', function () {
 			document.getElementById('vButton').style.color = 'blue';
 	}
 	if (event.keyCode == 98 || event.keyCode == 66) { // this is b
-			document.getElementById("doodlebob").load();
-			document.getElementById("doodlebob").play();
+			document.getElementById("sound1").load();
+			document.getElementById("sound1").play();
 			document.getElementById('bButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('bButton').style.borderColor = 'red';
 			document.getElementById('bButton').style.color = 'blue';
