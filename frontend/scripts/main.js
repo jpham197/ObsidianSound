@@ -343,14 +343,6 @@ document.addEventListener('keyup', function () {
 	}
 });
 
-// document.addEventListener('down', function() {
-// 	let b = "";
-// 	if (event.keyCode == 190) {
-// 			// b = document.getElementById('twoButton');
-// 			console.log("sss");
-// 	}
-// });
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;
