@@ -23,24 +23,55 @@ p {
 	left:68%;
 	width:600px;
 	height:250px;
-	background: #c0d6e4;
+	background: #555555;/*#c0d6e4  [might change this to another color, color cache]*/
+	box-shadow:
+		inset 30px 0 100px #1d1d1d,
+		inset -30px 0 100px #1d1d1d; /*color cache: #dddddd */
 	transform: translate(-50%,-50%);
+	border: solid 3px #2a2a2a;/*color cache: #fff*/
 }
+
+
+.balls{
+	width:100px;
+	height:100px;
+	border-radius: 60px;
+	background: red;
+	border: solid 3px gray;
+}
+
+.logback{
+	width:120px;
+	height:120px;
+	border-radius: 60px;
+	background: #fff;
+	position:absolute;
+	top:61px;
+	left:0;
+	transform:translateX(240px);
+}
+
 .Log{/*this is the logo in the center of the screen*/
 	width:100px;
 	position:relative;
-	top:70px;
-	transform:scale(2);
+	top:65px;
+	transform:scale(1.7);
 	left:0;
 	display: block;
 	margin: 0 auto;
 	transition: 2s;
+	cursor: pointer;
+	border-radius: 50%,50%,50%,50%;
 }
 
 .Log:hover{
-	transform:scale(3);
+	transform:scale(2);
+
 }
-/*Keyframes for screen*/
+/*Keyframes for screen section*/
+@keyframes extend {
+
+}
 
 
 /*screen end*/
