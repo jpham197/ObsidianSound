@@ -350,3 +350,25 @@ output.innerHTML = slider.value;
 slider.oninput = function () {
 		output.innerHTML = this.value;
 }
+document.getElementById("myRange").oninput = function() {myFunction()};
+
+function myFunction() {
+	document.getElementById("sound1").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound2").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound3").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound4").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound5").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound6").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound7").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound8").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound9").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound10").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound11").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound12").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound13").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound14").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound15").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound16").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound17").volume=(document.getElementById("myRange").value)/100;
+  document.getElementById("doodlebob").volume=(document.getElementById("myRange").value)/100;
+}
