@@ -282,7 +282,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 20px;
+		left: 22%;
 		top: 20px;
 }
 
@@ -295,7 +295,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 140px;
+		left: 32%;
 		top: 20px;
 }
 
@@ -308,7 +308,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 260px;
+		left: 42%;
 		top: 20px;
 }
 
@@ -321,7 +321,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 380px;
+		left: 52%;
 		top: 20px;
 }
 
@@ -334,7 +334,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 500px;
+		left: 62%;
 		top: 20px;
 }
 
@@ -347,7 +347,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 620px;
+		left: 72%;
 		top: 20px;
 }
 /*Q W E R T Y BUTTONS HERE-*/
@@ -360,7 +360,7 @@ animation-fill-mode: both;
 	border-style: outset;
 	border-color: red;
 	border-width: 7px;
-	left: 20px;
+	left: 22%;
 	top: 150px;
 }
 #wButton{
@@ -372,7 +372,7 @@ animation-fill-mode: both;
 	border-style: outset;
 	border-color: red;
 	border-width: 7px;
-	left: 140px;
+	left: 32%;
 	top: 150px;
 }
 #eButton{
@@ -384,7 +384,7 @@ animation-fill-mode: both;
 	border-style: outset;
 	border-color: red;
 	border-width: 7px;
-	left: 260px;
+	left: 42%;
 	top: 150px;
 }
 #rButton{
@@ -396,7 +396,7 @@ animation-fill-mode: both;
 	border-style: outset;
 	border-color: red;
 	border-width: 7px;
-	left: 380px;
+	left: 52%;
 	top: 150px;
 }
 #tButton{
@@ -408,7 +408,7 @@ animation-fill-mode: both;
 	border-style: outset;
 	border-color: red;
 	border-width: 7px;
-	left: 500px;
+	left: 62%;
 	top: 150px;
 }
 #yButton{
@@ -420,7 +420,7 @@ animation-fill-mode: both;
 	border-style: outset;
 	border-color: red;
 	border-width: 7px;
-	left: 620px;
+	left: 72%;
 	top: 150px;
 }
 
@@ -435,7 +435,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 20px;
+		left: 22%;
 		top: 280px;
 }
 
@@ -448,7 +448,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 140px;
+		left: 32%;
 		top: 280px;
 }
 
@@ -461,7 +461,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 260px;
+		left: 42%;
 		top: 280px;
 }
 #fButton {
@@ -473,7 +473,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 380px;
+		left: 52%;
 		top: 280px;
 }
 #gButton {
@@ -485,7 +485,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 500px;
+		left: 62%;
 		top: 280px;
 }
 #hButton {
@@ -497,7 +497,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 620px;
+		left: 72%;
 		top: 280px;
 }
 
@@ -512,7 +512,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 20px;
+		left: 22%;
 		top: 410px;
 }
 
@@ -525,7 +525,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 140px;
+		left: 32%;
 		top: 410px;
 }
 
@@ -538,7 +538,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 260px;
+		left: 42%;
 		top: 410px;
 }
 #vButton {
@@ -550,7 +550,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 380px;
+		left: 52%;
 		top: 410px;
 }
 #bButton {
@@ -562,7 +562,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 500px;
+		left: 62%;
 		top: 410px;
 }
 #nButton {
@@ -574,7 +574,7 @@ animation-fill-mode: both;
 		border-style: outset;
 		border-color: red;
 		border-width: 7px;
-		left: 620px;
+		left: 72%;
 		top: 410px;
 }
 
@@ -592,7 +592,7 @@ animation-fill-mode: both;
 	position: absolute;
 	cursor: pointer;
 	top: 100px;
-	right: 500px;
+	right: 10%;
 	width: 40px;
 	height: 300px;
 	background: #ccc;
@@ -602,38 +602,7 @@ animation-fill-mode: both;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
-.slider:before{
-	position: absolute;
-	content: "";
-	height: 26px;
-	width: 26px;
-	left:4px;
-	bottom: 4px;
-	background-color: #F0F8FF;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
 
-input:checked + .slider{
-	background-color: #2196F3;
-}
-input:focus + .slider {
-	box-shadow: 10 10 10px #2196F3;
-}
-input:checked + .slider:before {
-background-color: skyblue;
--webkit-transform: translateY(-26px);
--ms-transform: translateY(-26px);
-transform: translateY(-26px);
-}
-
-.slider.round {
-border-radius: 34px;
-}
-
-.slider.round:before {
-border-radius: 50%;
-}
 
 .button > p {
 	color: rgb(56, 0, 129);
