@@ -602,7 +602,7 @@ animation-fill-mode: both;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
-/*.slider:before{
+.slider:before{
 	position: absolute;
 	content: "";
 	height: 26px;
@@ -613,7 +613,7 @@ animation-fill-mode: both;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
-*/
+
 input:checked + .slider{
 	background-color: #2196F3;
 }
