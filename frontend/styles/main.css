@@ -34,12 +34,12 @@ p {
 	left:50%;
 	width:600px;
 	height:250px;
-	background: #555555;/*#c0d6e4  [might change this to another color, color cache]*/
-	box-shadow:
+	/*background: #555555;/*#c0d6e4  [might change this to another color, color cache]*/
+	/*box-shadow:
 		inset 30px 0px 100px #1d1d1d,
 		inset -30px 0px 100px #1d1d1d; /*color cache: #dddddd */
 	transform: translate(-50%,-50%);
-	border: solid 3px #2a2a2a;/*color cache: #fff*/
+	/*border: solid 3px #2a2a2a;/*color cache: #fff*/
 }
 
 .b8{
