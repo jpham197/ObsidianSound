@@ -34,11 +34,20 @@ p {
 	left:50%;
 	width:600px;
 	height:250px;
+	transform: translate(-50%,-50%);
+<<<<<<< Updated upstream
 	/*background: #555555;/*#c0d6e4  [might change this to another color, color cache]*/
 	/*box-shadow:
 		inset 30px 0px 100px #1d1d1d,
 		inset -30px 0px 100px #1d1d1d; /*color cache: #dddddd */
-	transform: translate(-50%,-50%);
+
+=======
+	/*background: #555555;*//*#c0d6e4  [might change this to another color, color cache]*/
+
+	/*box-shadow:
+		inset 30px 0px 100px #1d1d1d,
+		inset -30px 0px 100px #1d1d1d; /*color cache: #dddddd */
+>>>>>>> Stashed changes
 	/*border: solid 3px #2a2a2a;/*color cache: #fff*/
 }
 
@@ -65,7 +74,7 @@ background: #fff;/*color of all the balls should be  #fff */
 position:absolute;
 animation-name: extend7;
 animation-duration: 3s;
-animation-fill-mode: both;
+animation-fill-mode: forwards;
 }
 
 .b6{
@@ -184,6 +193,8 @@ animation-fill-mode: both;
 
 }
 /*Keyframes for screen section*/
+
+
 @keyframes pulse {
 	0%{
 		transform:scale(1.7);
