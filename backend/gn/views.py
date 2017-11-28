@@ -11,14 +11,27 @@ mp3s = {"mp3s":[{"filepath": "../soundfiles/1.mp3"},
                 {"filepath": "../soundfiles/2.mp3"},
                 {"filepath": "../soundfiles/3.mp3"},
                 {"filepath": "../soundfiles/4.mp3"},
-                {"filepath": "../soundfiles/5.m4a"},
+                {"filepath": "../soundfiles/5 shorter ver.mp3"},
                 {"filepath": "../soundfiles/6.m4a"},
                 {"filepath": "../soundfiles/7.m4a"},
                 {"filepath": "../soundfiles/8.m4a"},
                 {"filepath": "../soundfiles/9.mp3"},
                 {"filepath": "../soundfiles/10.mp3"},
                 {"filepath": "../soundfiles/11.mp3"},
-                {"filepath": "../soundfiles/12.mp3"}]}
+                {"filepath": "../soundfiles/12.mp3"},
+				{"filepath": "../soundfiles/13.wav"},
+                {"filepath": "../soundfiles/14.mp3"},
+                {"filepath": "../soundfiles/15.wav"},
+                {"filepath": "../soundfiles/16.wav"},
+                {"filepath": "../soundfiles/17.wav"},
+                {"filepath": "../soundfiles/18.mp3"},
+                {"filepath": "../soundfiles/19.mp3"},
+				{"filepath": "../soundfiles/20.mp3"},
+                {"filepath": "../soundfiles/21.mp3"},
+                {"filepath": "../soundfiles/22.mp3"},
+                {"filepath": "../soundfiles/23.mp3"},
+				{"filepath": "../soundfiles/24.mp3"},
+				{"filepath": "../soundfiles/Doodlebob sound effect.mp3"}]}
 
 accounts = {"Accounts":[{"admin": "password"},
                          {"user1": "password"},
@@ -64,7 +77,7 @@ def addbyjson_sounds():
         jsonSize = 0
         cur.execute('SELECT max(id) from sounds')
         entries = cur.fetchall()
-        if entries[0][0] < 12:
+        if entries[0][0] < 25:
             for num in mp3s['mp3s']:
                 jsonSize += 1
                 cur.execute('INSERT INTO sounds (filepath) VALUES (?)', [num['filepath']])

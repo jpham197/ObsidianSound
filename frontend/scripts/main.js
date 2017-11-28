@@ -176,7 +176,7 @@ document.addEventListener('keydown', function () {
 			document.getElementById('bButton').style.color = 'red';
 	}
 	if (event.keyCode == 110 || event.keyCode == 78) { // this is n
-			document.getElementById("doodlebob").play();
+			document.getElementById("sound25").play();
 			document.getElementById('nButton').style.background = 'white';
 			document.getElementById('nButton').style.borderColor = 'skyblue';
 			document.getElementById('nButton').style.color = 'red';
@@ -368,8 +368,8 @@ document.addEventListener('keyup', function () {
 	}
 	if (event.keyCode == 110 || event.keyCode == 78) { // this is n
 
-			document.getElementById("doodlebob").load();
-			document.getElementById("doodlebob").play();
+			document.getElementById("sound25").load();
+			document.getElementById("sound25").play();
 			document.getElementById('nButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('nButton').style.borderColor = 'red';
 			document.getElementById('nButton').style.color = 'blue';
@@ -406,7 +406,14 @@ function myFunction() {
 	document.getElementById("sound15").volume=(document.getElementById("myRange").value)/100;
 	document.getElementById("sound16").volume=(document.getElementById("myRange").value)/100;
 	document.getElementById("sound17").volume=(document.getElementById("myRange").value)/100;
-  document.getElementById("doodlebob").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound18").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound19").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound20").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound21").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound22").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound23").volume=(document.getElementById("myRange").value)/100;
+	document.getElementById("sound24").volume=(document.getElementById("myRange").value)/100;
+  document.getElementById("sound25").volume=(document.getElementById("myRange").value)/100;
 }
 
 /*If i make a audio = new Audio(); in each if statement and then do audio.src = document.getElementById("name")*/
