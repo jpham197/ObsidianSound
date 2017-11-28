@@ -1,4 +1,35 @@
 document.addEventListener('keydown', function () {
+	/*var ctx = new AudioContext();
+	var audio;
+	var audioSrc = ctx.createMediaElementSource(audio);
+	var analyser = ctx.createAnalyser();
+			analyser.fftSize = 256;
+
+	audioSrc.connect(analyser);
+	audioSrc.connect(ctx.destination);
+	var frequencyData = new Uint8Array(analyser.frequencyBinCount);
+	/////////////
+	var audio;
+	var fft;
+	var canvas = document.getElementById('canvass');
+
+	function setup(){
+		colorMode(HSB);
+		fft = new p5.FFT(.9,128);
+		w = 55.56%/64;
+	}
+
+	function draw(){
+		background(0);
+		var spect = fft.analyze();
+		stroke(255);
+		for(var i = 0; i < spect.length; i++){
+			var amp = spectrum[i];
+			var y = map(amp,0, 256, height, 0);
+			rect( i * w, y , w - 2 , 500 - y );
+		}
+	}*/
+
 	//1 2 3 4 5 6 BUTTONS HERE
 	if (event.keyCode == 49) { // this is 1
 			document.getElementById("sound1").play();
@@ -101,13 +132,13 @@ document.addEventListener('keydown', function () {
 			document.getElementById('fButton').style.color = 'red';
 	}
 	if (event.keyCode == 103 || event.keyCode == 71) { // this is g
-			document.getElementById("sound17").play();
+			document.getElementById("sound22").play();
 			document.getElementById('gButton').style.background = 'white';
 			document.getElementById('gButton').style.borderColor = 'skyblue';
 			document.getElementById('gButton').style.color = 'red';
 	}
 	if (event.keyCode == 104 || event.keyCode == 72) { // this is h
-			document.getElementById("sound2").play();
+			document.getElementById("sound23").play();
 			document.getElementById('hButton').style.background = 'white';
 			document.getElementById('hButton').style.borderColor = 'skyblue';
 			document.getElementById('hButton').style.color = 'red';
@@ -115,31 +146,31 @@ document.addEventListener('keydown', function () {
 
 	// Z X C V B N BUTTONS HERE
 	if (event.keyCode == 122 || event.keyCode == 90) { // this is z
-			document.getElementById("sound17").play();
+			document.getElementById("sound24").play();
 			document.getElementById('zButton').style.background = 'white';
 			document.getElementById('zButton').style.borderColor = 'skyblue';
 			document.getElementById('zButton').style.color = 'red';
 	}
 	if (event.keyCode == 120 || event.keyCode == 88) { // this is x
-			document.getElementById("sound1").play();
+			document.getElementById("sound18").play();
 			document.getElementById('xButton').style.background = 'white';
 			document.getElementById('xButton').style.borderColor = 'skyblue';
 			document.getElementById('xButton').style.color = 'red';
 	}
 	if (event.keyCode == 99 || event.keyCode == 67) { // this is c
-			document.getElementById("sound2").play();
+			document.getElementById("sound19").play();
 			document.getElementById('cButton').style.background = 'white';
 			document.getElementById('cButton').style.borderColor = 'skyblue';
 			document.getElementById('cButton').style.color = 'red';
 	}
 	if (event.keyCode == 118 || event.keyCode == 86) { // this is v
-			document.getElementById("sound2").play();
+			document.getElementById("sound20").play();
 			document.getElementById('vButton').style.background = 'white';
 			document.getElementById('vButton').style.borderColor = 'skyblue';
 			document.getElementById('vButton').style.color = 'red';
 	}
 	if (event.keyCode == 98 || event.keyCode == 66) { // this is b
-			document.getElementById("sound1").play();
+			document.getElementById("sound21").play();
 			document.getElementById('bButton').style.background = 'white';
 			document.getElementById('bButton').style.borderColor = 'skyblue';
 			document.getElementById('bButton').style.color = 'red';
@@ -173,6 +204,7 @@ document.addEventListener('keyup', function () {
 			document.getElementById('oneButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('oneButton').style.borderColor = 'red';
 			document.getElementById('oneButton').style.color = 'blue';
+
 	}
 	if (event.keyCode == 50) { // this is 2
 		// document.getElementById("sound6").load();
@@ -284,15 +316,15 @@ document.addEventListener('keyup', function () {
 			document.getElementById('fButton').style.color = 'blue';
 	}
 	if (event.keyCode == 103 || event.keyCode == 71) { // this is g
-			document.getElementById("sound17").load();
-			document.getElementById("sound17").play();
+			document.getElementById("sound22").load();
+			document.getElementById("sound22").play();
 			document.getElementById('gButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('gButton').style.borderColor = 'red';
 			document.getElementById('gButton').style.color = 'blue';
 	}
 	if (event.keyCode == 104 || event.keyCode == 72) { // this is h
-			document.getElementById("sound2").load();
-			document.getElementById("sound2").play();
+			document.getElementById("sound23").load();
+			document.getElementById("sound23").play();
 			document.getElementById('hButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('hButton').style.borderColor = 'red';
 			document.getElementById('hButton').style.color = 'blue';
@@ -300,46 +332,49 @@ document.addEventListener('keyup', function () {
 
 	// Z X C V B N BUTTONS HERE
 	if (event.keyCode == 122 || event.keyCode == 90) { // this is z
-			document.getElementById("sound17").load();
-			document.getElementById("sound17").play();
+			document.getElementById("sound24").load();
+			document.getElementById("sound24").play();
 			document.getElementById('zButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('zButton').style.borderColor = 'red';
 			document.getElementById('zButton').style.color = 'blue';
 	}
 	if (event.keyCode == 120 || event.keyCode == 88) { // this is x
-			document.getElementById("sound2").load();
-			document.getElementById("sound2").play();
+			document.getElementById("sound18").load();
+			document.getElementById("sound18").play();
 			document.getElementById('xButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('xButton').style.borderColor = 'red';
 			document.getElementById('xButton').style.color = 'blue';
 	}
 	if (event.keyCode == 99 || event.keyCode == 67) { // this is c
-			document.getElementById("sound2").load();
-			document.getElementById("sound2").play();
+			document.getElementById("sound19").load();
+			document.getElementById("sound19").play();
 			document.getElementById('cButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('cButton').style.borderColor = 'red';
 			document.getElementById('cButton').style.color = 'blue';
 	}
 	if (event.keyCode == 118 || event.keyCode == 86) { // this is v
-			document.getElementById("sound2").load();
-			document.getElementById("sound2").play();
+			document.getElementById("sound20").load();
+			document.getElementById("sound20").play();
 			document.getElementById('vButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('vButton').style.borderColor = 'red';
 			document.getElementById('vButton').style.color = 'blue';
 	}
 	if (event.keyCode == 98 || event.keyCode == 66) { // this is b
-			document.getElementById("sound1").load();
-			document.getElementById("sound1").play();
+			document.getElementById("sound21").load();
+			document.getElementById("sound21").play();
 			document.getElementById('bButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('bButton').style.borderColor = 'red';
 			document.getElementById('bButton').style.color = 'blue';
 	}
 	if (event.keyCode == 110 || event.keyCode == 78) { // this is n
+
 			document.getElementById("doodlebob").load();
 			document.getElementById("doodlebob").play();
 			document.getElementById('nButton').style.background = 'radial-gradient(circle,white, gray)';
 			document.getElementById('nButton').style.borderColor = 'red';
 			document.getElementById('nButton').style.color = 'blue';
+
+
 	}
 });
 
@@ -350,6 +385,7 @@ output.innerHTML = slider.value;
 slider.oninput = function () {
 		output.innerHTML = this.value;
 }
+
 document.getElementById("myRange").oninput = function() {myFunction()};
 
 function myFunction() {
@@ -371,4 +407,42 @@ function myFunction() {
 	document.getElementById("sound16").volume=(document.getElementById("myRange").value)/100;
 	document.getElementById("sound17").volume=(document.getElementById("myRange").value)/100;
   document.getElementById("doodlebob").volume=(document.getElementById("myRange").value)/100;
+}
+
+/*If i make a audio = new Audio(); in each if statement and then do audio.src = document.getElementById("name")*/
+
+var canvas, ctx, source, context, analyser, audio, fbc_array, bars, bar_x,bar_witdh, bar_height;
+function setup(audio){
+	canvas = document.getElementById('canvass');
+	ctx = canvas.getContext("2d");
+
+	//audio.src = '' we need to specify the audio being used
+
+	context = new AudioContext(); // think of this as the flowchart that contains all the nodes
+	analyser = context.createAnalyser(); // this makes an analyser node
+
+	source = context.createMediaElementSource(audio);
+	source.connect(analyser);
+	analyser.connect(context.destination);
+
+	framelooper();
+}
+
+function framelooper(){
+
+	window.webkitRequestAnimationFrame(framelooper);
+	fbc_array = new Uint8Array(analyser.frequencyBinCount);
+	analyser.getByteFrequencyData(fbf_array);
+	ctx.clearRect(0,0, canvas.width, canvas.height);
+
+	ctx.fillstyle = '#dddddd';
+	bars = 256;
+	for(var i = 0; i <bars; i++){
+		bar_x = i * 3;
+		bar_width = 2.5;
+		bar_height= -(fbc_array[i]/2);
+
+		ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
+	}
+
 }

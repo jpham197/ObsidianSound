@@ -16,11 +16,22 @@ p {
 		color: #380081;
 		font-size: 20px;
 }
+/*Visualizer begin*/
+#canvass{
+	position:absolute;
+	width: 55.56%;
+	height:479px;
+	border: 2px solid red;
+	left:21.9%;
+	top:18px;
+}
+
+/*Visualizer End*/
 /*Screen begin*/
 .screen{
 	position:fixed;
-	top:18%;
-	left:68%;
+	top:660px;
+	left:50%;
 	width:600px;
 	height:250px;
 	background: #555555;/*#c0d6e4  [might change this to another color, color cache]*/
